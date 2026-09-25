@@ -46,137 +46,285 @@
     </div>
   </header>
 
-  <!-- Product Sub-hero -->
-  <section class="modern-hero animate-on-scroll">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="tech-label">[ PRODUCT_CORE ]</div>
-        <h1>The Complete Robotics &<br><span class="highlight">Kinematics Workspace</span></h1>
-        <p class="subhead">Kinetra centralizes robot geometry, motion planning, simulation, and approvals into a single, highly structured engineering environment.</p>
-        
-        <div class="hero-ctas" style="margin-top: 2rem;">
-          <a href="https://dash.kinetra.lk/" class="btn btn-outline btn-arrow">OPEN DASHBOARD &rarr;</a>
+  <!-- Background layers from the product design -->
+  <div class="pp-grid-bg"></div>
+  <div class="pp-orb pp-orb-1"></div>
+  <div class="pp-orb pp-orb-2"></div>
+  <div class="pp-orb pp-orb-3"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="pp-hero">
+    <div class="pp-wrap pp-hero-grid">
+      <div class="pp-hero-text">
+        <div class="pp-pill"><span class="pp-dot"></span> [ System Init ]</div>
+
+        <h1>Powering the Future of <span>Robotics Engineering</span></h1>
+
+        <p class="pp-lead">We give robotics teams the tools they need to plan robot movement, test ideas, and make better engineering decisions with GPU-accelerated motion intelligence.</p>
+
+        <div class="pp-cta-row">
+          <button type="button" class="pp-btn pp-btn-solid" data-roadmap><span>Technical Roadmap</span><i data-lucide="chevron-right"></i></button>
+          <button type="button" class="pp-btn pp-btn-outline" data-popup="hero-explore" data-goto="capabilities">Explore Capabilities</button>
+        </div>
+
+        <div class="pp-badges">
+          <button type="button" class="pp-badge" data-popup="badge-ik">
+            <i data-lucide="cpu"></i>
+            <span><small>Kinematics</small><strong>27&micro;s IK Solve</strong></span>
+          </button>
+          <button type="button" class="pp-badge" data-popup="badge-motion">
+            <i data-lucide="zap"></i>
+            <span><small>Motion</small><strong>60&times; Faster</strong></span>
+          </button>
+          <button type="button" class="pp-badge" data-popup="badge-compute">
+            <i data-lucide="bot"></i>
+            <span><small>Compute</small><strong>2,070 TFLOPS</strong></span>
+          </button>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="ui-frame-glow">
-          <div class="corner top-left"></div>
-          <div class="corner top-right"></div>
-          <div class="corner bottom-left"></div>
-          <div class="corner bottom-right"></div>
-          <img src="/Hero%20Section.svg" alt="Platform Dashboard" class="floating-img" style="width:100%; object-fit:cover; mix-blend-mode:screen;" />
+
+      <div class="pp-hero-card-wrap">
+        <div class="pp-hero-card">
+          <span class="pp-bracket tl"></span><span class="pp-bracket tr"></span>
+          <span class="pp-bracket bl"></span><span class="pp-bracket br"></span>
+          <div class="pp-hero-card-inner">
+            <div class="pp-twin">
+              <div class="pp-twin-dots"></div>
+
+              <div class="pp-twin-top">
+                <button type="button" class="pp-live" data-popup="twin-live">Live Simulation :: Running</button>
+                <i data-lucide="activity" class="pp-pulse-icon"></i>
+              </div>
+
+              <div class="pp-twin-mid">
+                <button type="button" class="pp-ring-btn" data-popup="twin-engine" aria-label="NVIDIA cuRobo + Isaac Sim Twin">
+                  <span class="pp-ring"></span>
+                  <span class="pp-ring-icon"><i data-lucide="box"></i></span>
+                </button>
+                <div class="pp-twin-caption">NVIDIA cuRobo + Isaac Sim Twin</div>
+              </div>
+
+              <div class="pp-terminal">
+                <button type="button" data-popup="twin-planning"><span>Trajectory Planning:</span><strong>&lt; 100ms</strong></button>
+                <button type="button" data-popup="twin-platform"><span>Target Platform:</span><em>Jetson Thor / RTX 4090</em></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5-Module Deep Dive using new grids -->
-  <section class="modules-deep-dive">
-    <div class="container">
-      
-      <!-- Module 1 (Text Left, Image Right) -->
-      <div class="info-grid animate-on-scroll">
-        <div class="info-text">
-          <div class="tech-label">[ MODULE_01 ]</div>
-          <h2>Robot Model Library</h2>
-          <p>A centralized system for managing manipulator and mechanism records.</p>
-          <ul class="price-features" style="margin-top:2rem;">
-            <li><i data-lucide="check-circle"></i> Joint, link, and limit definitions</li>
-            <li><i data-lucide="check-circle"></i> Tool and payload profiles</li>
-            <li><i data-lucide="check-circle"></i> Coordinate-frame management</li>
-            <li><i data-lucide="check-circle"></i> Model ownership and version control</li>
-          </ul>
-        </div>
-        <div class="info-image">
-          <div class="ui-frame" style="width: 100%;">
-            <div class="corner top-left"></div><div class="corner top-right"></div>
-            <div class="corner bottom-left"></div><div class="corner bottom-right"></div>
-            <div style="width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: rgba(3, 80, 111, 0.2); border: 1px dashed var(--color-secondary);">
-              <span class="tech-mono" style="color: var(--color-muted); text-align: center; font-size: 0.85rem;">[ MODULE_01_IMAGE_SLOT ]<br><br>Recommended: 16:9</span>
-            </div>
-          </div>
-        </div>
+  <!-- ============ CAPABILITIES ============ -->
+  <section id="capabilities" class="pp-section">
+    <div class="pp-wrap">
+      <div class="pp-head">
+        <button type="button" class="pp-eyebrow" data-popup="cap-overview">[ Capabilities_01 ]</button>
+        <h2>Our Solutions</h2>
+        <p class="pp-sub">What We Offer</p>
       </div>
 
-      <!-- Module 2 (Image Left, Text Right) -->
-      <div class="info-grid animate-on-scroll">
-        <div class="info-image" style="grid-column: 1 / 7;">
-          <div class="ui-frame-left" style="width: 100%;">
-            <div style="width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: rgba(3, 80, 111, 0.2); border: 1px dashed var(--color-secondary);">
-              <span class="tech-mono" style="color: var(--color-muted); text-align: center; font-size: 0.85rem;">[ MODULE_02_IMAGE_SLOT ]<br><br>Recommended: 16:9</span>
+      <div class="pp-cap-grid">
+        <div class="pp-card">
+          <div class="pp-card-body">
+            <div class="pp-card-top">
+              <button type="button" class="pp-icon" data-popup="cap-library" aria-label="Robot Model Library"><i data-lucide="database"></i></button>
+              <button type="button" class="pp-tag" data-popup="cap-library">Asset Engine</button>
             </div>
+            <button type="button" class="pp-card-title" data-popup="cap-library"><h3>Robot Model Library</h3></button>
+            <p>Centralized manipulator records, joint definitions, URDF/USD assets, and specialized tool profiles.</p>
           </div>
+          <button type="button" class="pp-more" data-popup="cap-library"><span>Ver M&aacute;s</span><i data-lucide="chevron-right"></i></button>
         </div>
-        <div class="info-text" style="grid-column: 7 / 13;">
-          <div class="tech-label">[ MODULE_02 ]</div>
-          <h2>Kinematics Studio</h2>
-          <p>Advanced tools for analyzing and configuring robot movement parameters.</p>
-          <ul class="price-features" style="margin-top:2rem;">
-            <li><i data-lucide="check-circle"></i> Forward and inverse kinematics studies</li>
-            <li><i data-lucide="check-circle"></i> Reachability and workspace views</li>
-            <li><i data-lucide="check-circle"></i> Trajectory and waypoint editing</li>
-            <li><i data-lucide="check-circle"></i> Constraint and singularity indicators</li>
-          </ul>
+
+        <div class="pp-card">
+          <div class="pp-card-body">
+            <div class="pp-card-top">
+              <button type="button" class="pp-icon" data-popup="cap-kinematics" aria-label="Kinematics Studio"><i data-lucide="sliders-horizontal"></i></button>
+              <button type="button" class="pp-tag" data-popup="cap-kinematics">GPU Accelerated</button>
+            </div>
+            <button type="button" class="pp-card-title" data-popup="cap-kinematics"><h3>Kinematics Studio</h3></button>
+            <p>Forward and inverse kinematics studies, workspace views, trajectory editing powered by cuRobo CUDA acceleration.</p>
+          </div>
+          <button type="button" class="pp-more" data-popup="cap-kinematics"><span>Ver M&aacute;s</span><i data-lucide="chevron-right"></i></button>
+        </div>
+
+        <div class="pp-card">
+          <div class="pp-card-body">
+            <div class="pp-card-top">
+              <button type="button" class="pp-icon" data-popup="cap-simulation" aria-label="Simulation Lab"><i data-lucide="play"></i></button>
+              <button type="button" class="pp-tag" data-popup="cap-simulation">Digital Twin</button>
+            </div>
+            <button type="button" class="pp-card-title" data-popup="cap-simulation"><h3>Simulation Lab</h3></button>
+            <p>Work-cell scene configuration, collision analysis, and cycle-time context in physically accurate Isaac Sim &amp; Lab.</p>
+          </div>
+          <button type="button" class="pp-more" data-popup="cap-simulation"><span>Ver M&aacute;s</span><i data-lucide="chevron-right"></i></button>
+        </div>
+
+        <div class="pp-card">
+          <div class="pp-card-body">
+            <div class="pp-card-top">
+              <button type="button" class="pp-icon" data-popup="cap-edge" aria-label="Edge Robotics AI"><i data-lucide="cpu"></i></button>
+              <button type="button" class="pp-tag" data-popup="cap-edge">Real-Time Control</button>
+            </div>
+            <button type="button" class="pp-card-title" data-popup="cap-edge"><h3>Edge Robotics AI</h3></button>
+            <p>Jetson Thor &amp; Orin optimization, Holoscan sensor streaming, and Isaac ROS perception deployment.</p>
+          </div>
+          <button type="button" class="pp-more" data-popup="cap-edge"><span>Ver M&aacute;s</span><i data-lucide="chevron-right"></i></button>
         </div>
       </div>
-
-      <!-- Module 3 (Text Left, Image Right) -->
-      <div class="info-grid animate-on-scroll">
-        <div class="info-text">
-          <div class="tech-label">[ MODULE_03 ]</div>
-          <h2>Simulation Lab</h2>
-          <p>Create and run interactive kinematic simulations before deploying physical hardware.</p>
-          <ul class="price-features" style="margin-top:2rem;">
-            <li><i data-lucide="check-circle"></i> Virtual environment setup</li>
-            <li><i data-lucide="check-circle"></i> Collision detection checks</li>
-            <li><i data-lucide="check-circle"></i> Cycle time estimates</li>
-            <li><i data-lucide="check-circle"></i> Playback and timeline tools</li>
-          </ul>
-        </div>
-        <div class="info-image">
-          <div class="ui-frame-glow" style="width: 100%;">
-            <div class="corner top-left"></div><div class="corner top-right"></div>
-            <div class="corner bottom-left"></div><div class="corner bottom-right"></div>
-            <div style="width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: rgba(3, 80, 111, 0.2); border: 1px dashed var(--color-secondary);">
-              <span class="tech-mono" style="color: var(--color-muted); text-align: center; font-size: 0.85rem;">[ MODULE_03_IMAGE_SLOT ]<br><br>Recommended: 16:9</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 4 (Image Left, Text Right) -->
-      <div class="info-grid animate-on-scroll">
-        <div class="info-image" style="grid-column: 1 / 7;">
-          <div class="ui-frame-left" style="width: 100%;">
-            <div style="width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: rgba(3, 80, 111, 0.2); border: 1px dashed var(--color-secondary);">
-              <span class="tech-mono" style="color: var(--color-muted); text-align: center; font-size: 0.85rem;">[ MODULE_04_IMAGE_SLOT ]<br><br>Recommended: 16:9</span>
-            </div>
-          </div>
-        </div>
-        <div class="info-text" style="grid-column: 7 / 13;">
-          <div class="tech-label">[ MODULE_04 ]</div>
-          <h2>Engineering Validation</h2>
-          <p>A rigorous approval process to ensure models meet strict engineering standards.</p>
-          <ul class="price-features" style="margin-top:2rem;">
-            <li><i data-lucide="check-circle"></i> Peer review commenting</li>
-            <li><i data-lucide="check-circle"></i> Approval workflows (Draft, Review, Approved)</li>
-            <li><i data-lucide="check-circle"></i> Physical test evidence linking</li>
-            <li><i data-lucide="check-circle"></i> Formal sign-offs</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="newsletter-modern animate-on-scroll" style="text-align: center;">
-    <div class="container">
-      <div class="tech-label">[ INITIATE_DEPLOYMENT ]</div>
-      <h2 style="font-size: 3rem; margin-bottom: 2rem;">Ready to Centralize Your Fleet?</h2>
-      <a href="https://dash.kinetra.lk/" class="btn btn-outline">LAUNCH APP NOW &rarr;</a>
+  <!-- ============ ARCHITECTURE ============ -->
+  <section id="architecture" class="pp-section">
+    <div class="pp-wrap">
+      <div class="pp-arch-shell">
+        <div class="pp-arch-head">
+          <button type="button" class="pp-eyebrow" data-popup="arch-innovation">[ Innovation_Protocol ]</button>
+          <h2>Engineering Innovation for a Connected Floor</h2>
+          <p class="pp-lead pp-lead-sm">Engineering Better Motion for Robotics. In an environment where technology evolves at a dizzying pace, Kinetra has become a fundamental pillar to protect engineering assumptions and operational interests.</p>
+        </div>
+
+        <div class="pp-matrix">
+          <div class="pp-matrix-head">
+            <button type="button" class="pp-matrix-title" data-popup="arch-matrix"><i data-lucide="shield"></i><h3>Technical Roadmap &amp; Architecture</h3></button>
+            <button type="button" class="pp-mini-btn" data-roadmap><i data-lucide="file-text"></i><span>Full Technical Roadmap</span></button>
+          </div>
+
+          <div class="pp-tabs" role="tablist">
+            <button type="button" class="pp-tab is-active" role="tab" data-tab="overview">1. Executive Overview</button>
+            <button type="button" class="pp-tab" role="tab" data-tab="stack">2. Core Tech Stack</button>
+            <button type="button" class="pp-tab" role="tab" data-tab="nvidia">3. NVIDIA SDK Matrix</button>
+            <button type="button" class="pp-tab" role="tab" data-tab="hardware">4. Compute &amp; Hardware</button>
+            <button type="button" class="pp-tab" role="tab" data-tab="roadmap">5. Advanced Roadmap</button>
+          </div>
+
+          <!-- 1. Overview -->
+          <div class="pp-panel is-active" data-panel="overview">
+            <p><strong>Kinetra</strong> is an AI-native Motion, Robotics &amp; Kinematics platform designed to accelerate the development, simulation, and deployment of intelligent robotic systems across industrial, mobile, and humanoid domains.</p>
+            <p class="pp-dim">Traditional CPU-based motion planners take seconds to generate collision-free trajectories, making real-time reactive control impossible for high-degree-of-freedom (DoF) robots. Kinetra unifies GPU-accelerated kinematics solving, collision-free motion generation, robot learning, and edge deployment to achieve sub-100ms planning.</p>
+            <div class="pp-two">
+              <button type="button" class="pp-tile" data-popup="overview-domain">
+                <span class="pp-tile-label">Domain &amp; Target</span>
+                <strong>Production Domain: Kinetra.lk</strong>
+                <small>AI Motion Intelligence, Robotics &amp; Kinematics Platform</small>
+              </button>
+              <button type="button" class="pp-tile" data-popup="overview-perf">
+                <span class="pp-tile-label">Key Performance</span>
+                <strong>100ms UR10 Motion Generation</strong>
+                <small>On NVIDIA Jetson Orin / Thor hardware</small>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Stack -->
+          <div class="pp-panel" data-panel="stack">
+            <p class="pp-dim">Kinetra follows a modern AI-native architecture designed for real-time kinematics solving, motion planning, robot learning, and edge deployment workloads:</p>
+            <div class="pp-chips" id="ppStack"></div>
+          </div>
+
+          <!-- 3. NVIDIA -->
+          <div class="pp-panel" data-panel="nvidia">
+            <div class="pp-chips pp-sdk-chips" id="ppSdkChips"></div>
+            <div class="pp-sdk-detail">
+              <h4><i data-lucide="zap"></i> NVIDIA <span id="ppSdkName">cuRobo</span></h4>
+              <p id="ppSdkText"></p>
+              <button type="button" class="pp-link" id="ppSdkMore"><i data-lucide="info"></i> More about <span id="ppSdkMoreName">cuRobo</span></button>
+            </div>
+          </div>
+
+          <!-- 4. Hardware -->
+          <div class="pp-panel" data-panel="hardware">
+            <div class="pp-two">
+              <button type="button" class="pp-tile" data-popup="hw-cloud">
+                <span class="pp-tile-label"><i data-lucide="server"></i> Cloud Training &amp; Simulation</span>
+                <ul>
+                  <li>Amazon EC2 P5 (NVIDIA H100 Tensor Core GPUs)</li>
+                  <li>Amazon EC2 P4d (NVIDIA A100 Tensor Core GPUs)</li>
+                  <li>AWS EKS Cluster for Orchestration</li>
+                </ul>
+              </button>
+              <button type="button" class="pp-tile" data-popup="hw-edge">
+                <span class="pp-tile-label"><i data-lucide="cpu"></i> Edge Robot Deployment</span>
+                <ul>
+                  <li>NVIDIA Jetson AGX Thor T5000 (2,070 TFLOPS)</li>
+                  <li>NVIDIA Jetson Thor T3000 / T2000</li>
+                  <li>NVIDIA Jetson AGX Orin / IGX Orin</li>
+                </ul>
+              </button>
+            </div>
+          </div>
+
+          <!-- 5. Roadmap -->
+          <div class="pp-panel" data-panel="roadmap">
+            <p class="pp-dim">Strategic expansion roadmap across NVIDIA ecosystem technologies:</p>
+            <div class="pp-two pp-two-tight" id="ppRoadmapItems"></div>
+            <button type="button" class="pp-wide-btn" data-roadmap><i data-lucide="file-text"></i> View Complete Technical Roadmap</button>
+          </div>
+        </div>
+
+        <div class="pp-metrics" id="ppMetrics"></div>
+      </div>
     </div>
   </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section id="dashboard" class="pp-section">
+    <div class="pp-wrap">
+      <div class="pp-cta">
+        <span class="pp-bracket tl"></span><span class="pp-bracket tr"></span>
+        <span class="pp-bracket bl"></span><span class="pp-bracket br"></span>
+        <div class="pp-cta-icon"><i data-lucide="layout-dashboard"></i></div>
+        <div class="pp-cta-text">
+          <div class="pp-pill"><span class="pp-dot"></span> [ Dashboard_Access ]</div>
+          <h2>Connect to Your Dashboard</h2>
+          <p>Sign in to the Kinetra dashboard to manage robot models, run kinematics studies and simulations, and track validation and approvals in one workspace.</p>
+        </div>
+        <a href="https://dash.kinetra.lk/" class="pp-btn pp-btn-solid"><span>Connect Dashboard</span><i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPUP ============ -->
+  <div class="pp-overlay" id="ppPopup" hidden>
+    <div class="pp-dialog" role="dialog" aria-modal="true" aria-labelledby="ppPopupTitle">
+      <span class="pp-bracket tl"></span><span class="pp-bracket tr"></span>
+      <span class="pp-bracket bl"></span><span class="pp-bracket br"></span>
+      <div class="pp-dialog-head">
+        <div class="pp-dialog-icon"><i data-lucide="info"></i></div>
+        <div>
+          <div class="pp-dialog-tag" id="ppPopupTag"></div>
+          <h4 id="ppPopupTitle"></h4>
+        </div>
+        <button type="button" class="pp-close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      </div>
+      <p id="ppPopupDesc"></p>
+      <ul class="pp-bullets" id="ppPopupBullets"></ul>
+      <div class="pp-dialog-actions">
+        <a class="pp-btn pp-btn-solid pp-btn-sm" id="ppPopupAction" hidden></a>
+        <button type="button" class="pp-btn pp-btn-outline pp-btn-sm" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROADMAP MODAL ============ -->
+  <div class="pp-overlay" id="ppRoadmap" hidden>
+    <div class="pp-dialog pp-dialog-wide" role="dialog" aria-modal="true" aria-labelledby="ppRoadmapTitle">
+      <div class="pp-dialog-head">
+        <div class="pp-dialog-icon"><i data-lucide="file-text"></i></div>
+        <div>
+          <h4 id="ppRoadmapTitle">Technical Roadmap</h4>
+          <small>Kinetra &mdash; AI Motion, Robotics &amp; Kinematics Platform</small>
+        </div>
+        <button type="button" class="pp-close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      </div>
+      <div class="pp-roadmap-body" id="ppRoadmapBody"></div>
+      <div class="pp-dialog-actions">
+        <button type="button" class="pp-btn pp-btn-solid pp-btn-sm" data-close>Close Roadmap</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="modern-footer">
@@ -191,12 +339,12 @@
         <h4>Product</h4>
         <a href="#capabilities">Capabilities</a>
         <a href="#architecture">Architecture</a>
-        <a href="#pricing">Pricing</a>
+        <a href="/#pricing">Pricing</a>
       </div>
       <div class="footer-links">
         <h4>Company</h4>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
         <a href="#">FAQ</a>
       </div>
     </div>
@@ -219,6 +367,7 @@
   </footer>
 
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/product.js"></script>
 
   <!-- Chatwoot Live Chat -->
   <script>
