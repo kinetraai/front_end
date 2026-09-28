@@ -271,6 +271,16 @@ section { padding: 3rem 0; position: relative; z-index: 1; }
 .contact-link { display: flex; align-items: center; gap: 1rem; color: var(--color-accent); font-size: 1.05rem; transition: var(--transition); }
 .contact-link i { color: var(--color-secondary); width: 20px; height: 20px; }
 .contact-link:hover { opacity: 0.8; transform: translateX(5px); }
+.office-grid { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.office { display: grid; gap: 0.5rem; align-content: start; padding-top: 1.25rem; border-top: 1px solid var(--glass-border); }
+.office .tech-label { margin-bottom: 0; }
+.office strong { color: var(--color-accent); font-size: 0.95rem; }
+.office address { font-style: normal; font-size: 0.9rem; line-height: 1.6; }
+.office .contact-link { font-size: 0.9rem; gap: 0.6rem; margin-top: 0.25rem; }
+.office .contact-link i { width: 16px; height: 16px; }
+.company-facts { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--glass-border); display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem 2rem; }
+.company-facts dt { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-muted); }
+.company-facts dd { margin: 0.2rem 0 0; color: var(--color-accent); font-size: 0.95rem; }
 .contact-form-modern { grid-column: 6 / 13; padding: 4rem; }
 .input-group { margin-bottom: 1.5rem; }
 .input-group input, .input-group select, .input-group textarea {
@@ -318,6 +328,7 @@ section { padding: 3rem 0; position: relative; z-index: 1; }
 .social-icons { display: flex; gap: 1.5rem; }
 .social-icons a { color: var(--color-muted); }
 .social-icons a:hover { color: var(--color-accent); }
+.footer-brand .social-icons { margin-top: 1.5rem; }
 
 /* Cookie Banner */
 .cookie-banner {
@@ -584,6 +595,7 @@ section { padding: 3rem 0; position: relative; z-index: 1; }
   .pp-hero h1 { font-size: 3rem; }
 }
 @media (max-width: 720px) {
+  .office-grid, .company-facts { grid-template-columns: 1fr; }
   .pp-cta { flex-direction: column; align-items: flex-start; padding: 1.75rem; }
   .pp-cta .pp-btn { width: 100%; }
   .pp-hero { padding-top: 8rem; }
@@ -596,3 +608,19 @@ section { padding: 3rem 0; position: relative; z-index: 1; }
   .pp-matrix { padding: 1.25rem; }
   .pp-phase .pp-two, .pp-targets, .pp-phase .pp-chips { padding-left: 0; }
 }
+
+/* ---------- Legal pages (Privacy Policy) ---------- */
+.legal-page { position: relative; z-index: 1; padding: 9rem 0 5rem; }
+.legal-content { max-width: 52rem; }
+.legal-content h1 { font-size: 2.75rem; margin-bottom: 0.5rem; }
+.legal-content h2 { font-size: 1.6rem; margin: 2.75rem 0 1rem; padding-top: 1.75rem; border-top: 1px solid var(--glass-border); }
+.legal-content h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
+.legal-content h4 { font-size: 1rem; margin: 1.5rem 0 0.5rem; font-family: var(--font-mono); letter-spacing: 0.5px; }
+.legal-content p { margin: 0 0 1rem; line-height: 1.75; }
+.legal-content ul { margin: 0 0 1.25rem; padding-left: 1.4rem; display: grid; gap: 0.6rem; }
+.legal-content li p { margin-bottom: 0.5rem; }
+.legal-content li ul { margin-top: 0.6rem; margin-bottom: 0; }
+.legal-content strong { color: var(--color-accent); font-weight: 600; }
+.legal-content a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; word-break: break-word; }
+.legal-content a:hover { opacity: 0.8; }
+@media (max-width: 720px) { .legal-page { padding-top: 8rem; } .legal-content h1 { font-size: 2rem; } }

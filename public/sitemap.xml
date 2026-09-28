@@ -8,4 +8,12 @@
     <loc>https://kinetra.lk/product</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://kinetra.lk/privacy-policy</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kinetra.lk/terms-and-conditions</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
