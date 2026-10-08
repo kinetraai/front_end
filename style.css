@@ -363,6 +363,8 @@ section { padding: 3rem 0; position: relative; z-index: 1; }
   .modern-hero { padding: 6rem 0 2rem; }
   .hero-grid, .info-grid, .contact-grid-modern { grid-template-columns: 1fr; }
   .hero-content, .hero-image, .info-text, .info-image, .contact-info-modern, .contact-form-modern { grid-column: 1 / -1; }
+  .hero-image { justify-content: center; }
+  .hero-image .ui-frame { max-width: 420px; }
   .contact-info-modern, .contact-form-modern, .map-grid { grid-row: auto; }
   .cap-grid-modern, .pricing-grid-modern, .test-grid-modern { grid-template-columns: 1fr; }
   .modern-card, .price-card-modern, .test-card-modern { grid-column: 1 / -1; }
