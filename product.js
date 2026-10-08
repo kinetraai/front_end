@@ -5,7 +5,7 @@ const POPUPS = {
   // --- hero actions ---
   'hero-explore': {
     icon: 'layers', tag: 'Action · Explore', title: 'Explore Capabilities',
-    description: 'Jump straight into the four capability pillars that make up the Kinetra platform — asset management, kinematics, simulation and edge deployment.',
+    description: 'Jump straight into the four capability pillars that make up the Kinetra platform, asset management, kinematics, simulation and edge deployment.',
     bullets: ['Robot Model Library', 'Kinematics Studio', 'Simulation Lab', 'Edge Robotics AI'],
   },
   'twin-engine': {
@@ -17,8 +17,8 @@ const POPUPS = {
   // --- capabilities ---
   'cap-overview': {
     icon: 'layers', tag: 'Section · 01', title: 'Capabilities Overview',
-    description: 'Four integrated pillars cover the full robotics lifecycle — from robot model definition through GPU-accelerated motion planning, physics simulation and edge deployment.',
-    bullets: ['Asset Engine — robot model library', 'GPU Accelerated — kinematics studio', 'Digital Twin — simulation lab', 'Real-Time Control — edge robotics AI'],
+    description: 'Four integrated pillars cover the full robotics lifecycle, from robot model definition through GPU-accelerated motion planning, physics simulation and edge deployment.',
+    bullets: ['Asset Engine, robot model library', 'GPU Accelerated, kinematics studio', 'Digital Twin, simulation lab', 'Real-Time Control, edge robotics AI'],
   },
   'cap-library': {
     icon: 'database', tag: 'Capability · Asset Engine', title: 'Robot Model Library',
@@ -38,7 +38,7 @@ const POPUPS = {
   'cap-edge': {
     icon: 'cpu', tag: 'Capability · Real-Time Control', title: 'Edge Robotics AI',
     description: 'Deploy optimised inference to the robot itself. TensorRT-compiled policies, Holoscan sensor streaming and Isaac ROS perception on Jetson Thor and Orin.',
-    bullets: ['TensorRT INT8 / FP16 policy optimisation', 'Holoscan Sensor Bridge — 17ms 4K60 latency', 'Isaac ROS cuVSLAM & cuMotion deployment', 'Up to 2,070 FP4 TFLOPS on Jetson Thor'],
+    bullets: ['TensorRT INT8 / FP16 policy optimisation', 'Holoscan Sensor Bridge, 17ms 4K60 latency', 'Isaac ROS cuVSLAM & cuMotion deployment', 'Up to 2,070 FP4 TFLOPS on Jetson Thor'],
   },
 
   // --- hero badges ---
@@ -49,12 +49,12 @@ const POPUPS = {
   },
   'badge-motion': {
     icon: 'zap', tag: 'Benchmark · Motion', title: '60× Faster Trajectory Generation',
-    description: 'Industrial cuRobo deployments generate collision-free trajectories an average of 60× faster than leading CPU-based motion planners — under 100 milliseconds end to end.',
+    description: 'Industrial cuRobo deployments generate collision-free trajectories an average of 60× faster than leading CPU-based motion planners, under 100 milliseconds end to end.',
     bullets: ['60× speed-up vs CPU planners', 'UR10 motion generated in under 100ms', 'Global motion generation in ~30ms', 'Real-time reactive control enabled'],
   },
   'badge-compute': {
     icon: 'bot', tag: 'Benchmark · Compute', title: '2,070 FP4 TFLOPS at the Edge',
-    description: 'NVIDIA Jetson AGX Thor T5000 delivers up to 2,070 FP4 TFLOPS with 128GB of memory — enough to run billion-parameter foundation models directly on a humanoid robot.',
+    description: 'NVIDIA Jetson AGX Thor T5000 delivers up to 2,070 FP4 TFLOPS with 128GB of memory, enough to run billion-parameter foundation models directly on a humanoid robot.',
     bullets: ['2,070 FP4 TFLOPS · 128GB memory', '7.5× performance vs Jetson AGX Orin', '3.5× better energy efficiency', 'Up to 12GB memory reclamation'],
   },
 
@@ -66,13 +66,13 @@ const POPUPS = {
   },
   'twin-planning': {
     icon: 'gauge', tag: 'Metric · Planning', title: 'Trajectory Planning < 100ms',
-    description: 'Collision-free motion for a UR10 is generated in under 100 milliseconds on Jetson Orin — fast enough for real-time reactive control.',
+    description: 'Collision-free motion for a UR10 is generated in under 100 milliseconds on Jetson Orin, fast enough for real-time reactive control.',
     bullets: ['UR10 motion under 100ms on Jetson Orin', '60× faster than CPU-based planners', 'Global motion generation in ~30ms', 'Runs on RTX 4090 and Jetson Thor'],
   },
   'twin-platform': {
     icon: 'cpu', tag: 'Runtime · Hardware', title: 'Target Platform',
     description: 'Kinetra runs on both workstation GPUs for development and Jetson Thor or Orin modules for on-robot inference.',
-    bullets: ['NVIDIA RTX 4090 — desktop development', 'Jetson AGX Thor T5000 — 2,070 TFLOPS', 'Jetson AGX Orin — existing robot platforms', 'Jetson Thor T3000 / T2000 — compact edge'],
+    bullets: ['NVIDIA RTX 4090, desktop development', 'Jetson AGX Thor T5000, 2,070 TFLOPS', 'Jetson AGX Orin, existing robot platforms', 'Jetson Thor T3000 / T2000, compact edge'],
   },
 
   // --- architecture ---
@@ -89,7 +89,7 @@ const POPUPS = {
   },
   'overview-domain': {
     icon: 'globe', tag: 'Platform · Domain', title: 'Production Domain: Kinetra.lk',
-    description: 'Kinetra is live at kinetra.lk — an AI Motion Intelligence, Robotics & Kinematics platform for industrial, mobile and humanoid systems.',
+    description: 'Kinetra is live at kinetra.lk, an AI Motion Intelligence, Robotics & Kinematics platform for industrial, mobile and humanoid systems.',
     bullets: ['AI Motion Intelligence platform', 'Robotics & Kinematics tooling', 'Industrial, mobile & humanoid domains', 'GPU-accelerated throughout'],
   },
   'overview-perf': {
@@ -100,12 +100,12 @@ const POPUPS = {
   'hw-cloud': {
     icon: 'server', tag: 'Infrastructure · Cloud', title: 'Cloud Training & Simulation',
     description: 'Robot policies are trained and simulation workloads are orchestrated on AWS GPU instances with NVIDIA H100 and A100 Tensor Core GPUs.',
-    bullets: ['Amazon EC2 P5 — NVIDIA H100 GPUs', 'Amazon EC2 P4d — NVIDIA A100 GPUs', 'AWS EKS for cluster orchestration', 'Thousands of parallel simulation envs'],
+    bullets: ['Amazon EC2 P5, NVIDIA H100 GPUs', 'Amazon EC2 P4d, NVIDIA A100 GPUs', 'AWS EKS for cluster orchestration', 'Thousands of parallel simulation envs'],
   },
   'hw-edge': {
     icon: 'cpu', tag: 'Infrastructure · Edge', title: 'Edge Robot Deployment',
-    description: 'Optimised inference runs directly on the robot via NVIDIA Jetson Thor and Orin modules — real-time control without a network round trip.',
-    bullets: ['Jetson AGX Thor T5000 — 2,070 TFLOPS', 'Jetson Thor T3000 / T2000', 'Jetson AGX Orin / IGX Orin', 'TensorRT-optimised inference'],
+    description: 'Optimised inference runs directly on the robot via NVIDIA Jetson Thor and Orin modules, real-time control without a network round trip.',
+    bullets: ['Jetson AGX Thor T5000, 2,070 TFLOPS', 'Jetson Thor T3000 / T2000', 'Jetson AGX Orin / IGX Orin', 'TensorRT-optimised inference'],
   },
 
   // --- metrics ---
@@ -121,7 +121,7 @@ const POPUPS = {
   },
   'metric-validation': {
     icon: 'shield-check', tag: 'Metric · Quality', title: '100% Validation',
-    description: 'Every motion plan produced by Kinetra passes collision and constraint validation before it reaches hardware — sim-first, safety-aware by design.',
+    description: 'Every motion plan produced by Kinetra passes collision and constraint validation before it reaches hardware, sim-first, safety-aware by design.',
     bullets: ['Collision-free verification on every plan', 'Physics-accurate simulation gate', 'Hardware-in-the-loop validation stage'],
   },
   'metric-projects': {
@@ -206,7 +206,7 @@ const METRICS = [
 
 const PHASES = [
   {
-    icon: 'circuit-board', title: 'Phase 01 — Q3 · Core Acceleration Layer', sub: 'GPU-Accelerated Kinematics & Simulation Foundation',
+    icon: 'circuit-board', title: 'Phase 01: Q3 · Core Acceleration Layer', sub: 'GPU-Accelerated Kinematics & Simulation Foundation',
     items: [
       'Integrate NVIDIA cuRobo for GPU-accelerated kinematics and motion generation',
       'Deploy NVIDIA Isaac Sim for physics-accurate robot simulation and digital twins',
@@ -215,7 +215,7 @@ const PHASES = [
     ],
   },
   {
-    icon: 'radar', title: 'Phase 02 — Q3–Q4 · Sensor Fusion & Edge Runtime', sub: 'Real-Time Perception, Streaming & Edge Compute',
+    icon: 'radar', title: 'Phase 02: Q3–Q4 · Sensor Fusion & Edge Runtime', sub: 'Real-Time Perception, Streaming & Edge Compute',
     items: [
       'Deploy NVIDIA Holoscan Sensor Bridge for real-time sensor fusion',
       'Deploy core robotics inference on NVIDIA Jetson AGX Thor',
@@ -224,7 +224,7 @@ const PHASES = [
     ],
   },
   {
-    icon: 'gauge', title: 'Phase 03 — Q4 · Optimization & Scale', sub: 'Inference Optimization, Benchmarking & Unified Platform',
+    icon: 'gauge', title: 'Phase 03: Q4 · Optimization & Scale', sub: 'Inference Optimization, Benchmarking & Unified Platform',
     items: [
       'Optimize robotics AI models using NVIDIA TensorRT',
       'Deploy NVIDIA Triton Inference Server for scalable multi-model serving',
@@ -319,7 +319,7 @@ const buildRoadmap = () => {
   const stack = STACK.map((s) => `<span class="pp-chip pp-chip-static">${s}</span>`).join('');
 
   $('#ppRoadmapBody').innerHTML = `
-    <div class="pp-mission"><strong>MISSION:</strong> Deliver GPU-accelerated motion intelligence that operates in milliseconds rather than seconds — unifying kinematics solving, collision-free motion generation, robot learning, and edge deployment across industrial, mobile, and humanoid robotics.</div>
+    <div class="pp-mission"><strong>MISSION:</strong> Deliver GPU-accelerated motion intelligence that operates in milliseconds rather than seconds, unifying kinematics solving, collision-free motion generation, robot learning, and edge deployment across industrial, mobile, and humanoid robotics.</div>
     ${phases}
     <div class="pp-phase">
       <div class="pp-phase-head">
@@ -414,7 +414,7 @@ document.addEventListener('click', (e) => {
     const item = STACK[stackChip.dataset.stack];
     openPopup({
       icon: 'code', tag: 'Stack · Component', title: item,
-      description: `Part of the Kinetra production core stack — ${item} is used across the platform for motion planning, simulation, learning or deployment workloads.`,
+      description: `Part of the Kinetra production core stack, ${item} is used across the platform for motion planning, simulation, learning or deployment workloads.`,
       bullets: ['In production use across Kinetra', 'Integrated into the AI-native architecture', 'Supports real-time robotics workloads'],
     });
     return;

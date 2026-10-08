@@ -31,6 +31,35 @@ document.addEventListener('DOMContentLoaded', () => {
         navActions.style.padding = '0 2rem 2rem';
       }
     });
+
+    // Close the mobile menu once a nav link is tapped
+    desktopNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (window.getComputedStyle(menuBtn).display !== 'none') menuBtn.click();
+      });
+    });
+  }
+
+  // Scroll-spy: highlight the nav link for the section currently in view
+  const navLinks = [...document.querySelectorAll('.desktop-nav a[href^="#"]')];
+  const sections = navLinks
+    .map((link) => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+
+  if (navLinks.length && sections.length) {
+    const setActive = (id) => {
+      navLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+    };
+
+    const spy = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length) setActive(visible[0].target.id);
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+    );
+
+    sections.forEach((section) => spy.observe(section));
   }
 
   // FAQ Accordion
